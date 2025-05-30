@@ -1,0 +1,5 @@
+Documentation:
+
+- https://www.raylib.com/cheatsheet/cheatsheet.html
+- https://www.raylib.com/examples/shapes/loader.html?name=shapes_colors_palette
+- https://github.com/raysan5/raylib/wiki
