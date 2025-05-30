@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=3 uid="uid://l8mbdt336g0d"]
+
+[ext_resource type="Script" path="res://character_body_3d.gd" id="1_rr7ic"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_gxrug"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6048v"]
+
+[sub_resource type="Environment" id="Environment_hq568"]
+background_mode = 2
+ambient_light_source = 3
+ssr_enabled = true
+ssao_enabled = true
+ssil_enabled = true
+sdfgi_enabled = true
+glow_enabled = true
+fog_enabled = true
+volumetric_fog_enabled = true
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_u0ca3"]
+
+[sub_resource type="Compositor" id="Compositor_3kbd4"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_dqnh2"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+script = ExtResource("1_rr7ic")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
+mesh = SubResource("PrismMesh_gxrug")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+shape = SubResource("BoxShape3D_6048v")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.808812, 0.588068, 0, -0.588068, 0.808812, 0, 2.42375, 5.07324)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_hq568")
+camera_attributes = SubResource("CameraAttributesPractical_u0ca3")
+compositor = SubResource("Compositor_3kbd4")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.3144, 0)
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.49004, -2.00451, 2.29998)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(-25.5897, 0, 0, 0, 1.22016e-06, 0.999999, 0, 27.914, -4.37114e-08, 0, -0.52507, 0)
+mesh = SubResource("QuadMesh_dqnh2")

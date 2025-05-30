@@ -1,0 +1,57 @@
+// ConsoleApplication1.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+#include "raylib.h"
+using namespace std;
+
+class paddle {
+
+
+};
+
+class ball {
+public:
+    void Draw() {
+        DrawCircle(x, y, radius, Red);
+
+    }
+
+};
+
+
+
+int main()
+{
+    std::cout << "Starting the game" << std::endl;
+
+    // defining screen window
+    const int screen_width = 1280;
+    const int screen_height = 800;
+    InitWindow(screen_width, screen_height, "Game for DSA Project");
+
+    // sets framerate for the game
+    SetTargetFPS(60);
+
+
+    // something called game loop? 
+    // supposedly this is a frame enerator for the game
+    while (WindowShouldClose() == false) {
+        BeginDrawing();
+
+
+
+
+
+        // drawing objects
+        ball.Draw();
+
+
+
+
+        EndDrawing();
+    }
+
+    CloseWindow();
+    return 0;
+}

@@ -1,2 +1,1 @@
-# Game-Development-Journey
-Records of my Game Development
+[ Repository created 12th December 2024 ]

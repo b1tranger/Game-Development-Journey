@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cfxpaxlwh0w2p"
+path="res://.godot/imported/Dust Bin - 03 Sost cgTeCH.obj-5d3ed8d36e6b6436a511f0b38f5c834e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Dust Bin - 03 Sost cgTeCH.obj-5d3ed8d36e6b6436a511f0b38f5c834e.mesh"]
+
+source_file="res://Dust Bin - 03 Sost cgTeCH.obj"
+dest_files=["res://.godot/imported/Dust Bin - 03 Sost cgTeCH.obj-5d3ed8d36e6b6436a511f0b38f5c834e.mesh", "res://.godot/imported/Dust Bin - 03 Sost cgTeCH.obj-5d3ed8d36e6b6436a511f0b38f5c834e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

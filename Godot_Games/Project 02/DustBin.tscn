@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwjg5b2s8vfr3"]
+
+[ext_resource type="ArrayMesh" uid="uid://cfxpaxlwh0w2p" path="res://Dust Bin - 03 Sost cgTeCH.obj" id="1_hgt76"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="DustBin-03SostCgTeCh" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.297175, 0.954823, 0, -0.954823, -0.297175, 0, 0, 0, 1, -0.853331, 2.50868, 1.3225)
+mesh = ExtResource("1_hgt76")
