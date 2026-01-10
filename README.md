@@ -4,3 +4,7 @@
 
 ### # Other Game Repo
 - [DSA-project](https://github.com/b1tranger/2D-Game_DSA-project)
+
+
+### # resources
+- [raylib.resources.md](https://github.com/b1tranger/Game-Development-Journey/blob/main/Raylib_Games/raylib.resources.md)
