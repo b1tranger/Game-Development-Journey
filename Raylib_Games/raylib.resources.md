@@ -7,9 +7,12 @@ Tutorials:
 - [How to setup raylib with C++ in Visual Studio 2022 Community - Beginner tutorial](https://youtu.be/UiZGTIYld1M) 
   - https://github.com/microsoft/vcpkg 
   - Unzip vcpkg in System Root (C drive), rename folder (remove -master) then run in powershell (type “powershell” in the explorer address bar):
-	> ./bootstrap-vcpkg.bat
-	> ./vcpkg integrate install
-	> ./vcpkg install raylib:x64-windows
+
+  ```
+  ./bootstrap-vcpkg.bat
+  ./vcpkg integrate install
+  ./vcpkg install raylib:x64-windows
+  ```
   - https://www.raylib.com/index.html 
   - https://github.com/educ8s/Raylib-CPP-Starter-Template-for-VSCODE-V2 
   - https://github.com/educ8s/Intro-To-raylib-Tutorial 
