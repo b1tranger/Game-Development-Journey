@@ -8,4 +8,4 @@
 
 ### # resources
 - [raylib.resources.md](https://github.com/b1tranger/Game-Development-Journey/blob/main/Raylib_Games/raylib.resources.md)
-- Ideas [idea.md](https://github.com/b1tranger/Game-Development-Journey/blob/main/idea.md)
+- [idea.md](https://github.com/b1tranger/Game-Development-Journey/blob/main/idea.md)
