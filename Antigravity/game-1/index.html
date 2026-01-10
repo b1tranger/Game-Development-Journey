@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Runner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>NEON RUNNER</h1>
+        
+        <div id="ui-layer">
+            <div id="start-screen" class="panel">
+                <h2>Ready to Run?</h2>
+                <p>Use SPACE or UP ARROW to Jump</p>
+                <div class="input-group">
+                    <input type="text" id="player-name" placeholder="Enter Your Name" maxlength="15">
+                </div>
+                <button id="start-btn" class="glow-btn">START GAME</button>
+            </div>
+
+            <div id="game-over-screen" class="panel hidden">
+                <h2>GAME OVER</h2>
+                <div class="score-display">Final Score: <span id="final-score">0</span></div>
+                <div id="status-message"></div>
+                <button id="restart-btn" class="glow-btn">TRY AGAIN</button>
+            </div>
+        </div>
+
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+        <div class="scoreboard-container">
+            <h3>HIGH SCORES</h3>
+            <ul id="high-score-list">
+                <li>Loading...</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
