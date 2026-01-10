@@ -1,0 +1,14 @@
+﻿  for_testing.cpp
+E:\Git_WIP\2. Personal Repositories\Game-Development-Journey\Raylib_Games\Raylib_for_testing\for_testing\for_testing.cpp(92,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+E:\Git_WIP\2. Personal Repositories\Game-Development-Journey\Raylib_Games\Raylib_for_testing\for_testing\for_testing.cpp(93,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+E:\Git_WIP\2. Personal Repositories\Game-Development-Journey\Raylib_Games\Raylib_for_testing\for_testing\for_testing.cpp(141,83): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+E:\Git_WIP\2. Personal Repositories\Game-Development-Journey\Raylib_Games\Raylib_for_testing\for_testing\for_testing.cpp(141,28): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+E:\Git_WIP\2. Personal Repositories\Game-Development-Journey\Raylib_Games\Raylib_for_testing\for_testing\for_testing.cpp(142,81): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+E:\Git_WIP\2. Personal Repositories\Game-Development-Journey\Raylib_Games\Raylib_for_testing\for_testing\for_testing.cpp(142,28): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+E:\Git_WIP\2. Personal Repositories\Game-Development-Journey\Raylib_Games\Raylib_for_testing\for_testing\for_testing.cpp(173,74): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+E:\Git_WIP\2. Personal Repositories\Game-Development-Journey\Raylib_Games\Raylib_for_testing\for_testing\for_testing.cpp(173,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+E:\Git_WIP\2. Personal Repositories\Game-Development-Journey\Raylib_Games\Raylib_for_testing\for_testing\for_testing.cpp(183,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+E:\Git_WIP\2. Personal Repositories\Game-Development-Journey\Raylib_Games\Raylib_for_testing\for_testing\for_testing.cpp(182,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  for_testing.vcxproj -> E:\Git_WIP\2. Personal Repositories\Game-Development-Journey\Raylib_Games\Raylib_for_testing\x64\Debug\for_testing.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
