@@ -1,0 +1,1 @@
+- game project with computer vision. snake that moves with visual inputs
