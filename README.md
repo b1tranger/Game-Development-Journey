@@ -3,8 +3,8 @@
 [ Repository created 12th December 2024 ]
 
 ### # Other Game Repo
-- [DSA-project](https://github.com/b1tranger/2D-Game_DSA-project)
-
+- [2D-Game_DSA-project)](https://github.com/b1tranger/2D-Game_DSA-project)
+- [IP_Lab_Project_2D_Game](https://github.com/b1tranger/IP_Lab_Project_2D_Game)
 
 ### # resources
 - [raylib.resources.md](https://github.com/b1tranger/Game-Development-Journey/blob/main/Raylib_Games/raylib.resources.md)
