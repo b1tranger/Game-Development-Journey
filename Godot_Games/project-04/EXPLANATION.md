@@ -85,7 +85,7 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
     # Called every physics frame (60 times per second)
-    # 'delta' is the time since the last frame
+	# 'delta' is the time since the last frame
     velocity.x = speed
     move_and_slide()
 ```
@@ -120,11 +120,11 @@ An **Area2D** detects when other bodies **enter or exit** its area, but doesn't 
 ```gdscript
 # Area2D can detect bodies entering
 func _ready():
-    body_entered.connect(_on_body_entered)
+	body_entered.connect(_on_body_entered)
 
 func _on_body_entered(body: Node2D) -> void:
-    if body is CharacterBody2D:
-        print("Player entered!")
+	if body is CharacterBody2D:
+		print("Player entered!")
 ```
 
 ### 2.5 Signals
@@ -155,7 +155,7 @@ Instead of checking specific keys, Godot uses **input actions**. You define name
 # Instead of:  if Input.is_key_pressed(KEY_SPACE):
 # Use:
 if Input.is_action_just_pressed("jump"):
-    velocity.y = jump_velocity
+	velocity.y = jump_velocity
 ```
 
 This project defines: `move_left` (A/←), `move_right` (D/→), `jump` (Space/W/↑).
@@ -232,9 +232,9 @@ This is the heart of every Godot project. It defines:
 
 ```gdscript
 var level_scenes: Array[String] = [
-    "res://scenes/levels/level_1.tscn",
-    "res://scenes/levels/level_2.tscn",
-    ...
+	"res://scenes/levels/level_1.tscn",
+	"res://scenes/levels/level_2.tscn",
+	...
 ]
 var current_level: int = 0
 ```
@@ -255,19 +255,19 @@ The player uses `CharacterBody2D`, which gives us:
 
 ```gdscript
 func _physics_process(delta):
-    # Gravity: accelerate downward
-    if not is_on_floor():
-        velocity.y += get_gravity().y * delta
+	# Gravity: accelerate downward
+	if not is_on_floor():
+		velocity.y += get_gravity().y * delta
 
-    # Jump: only when on the floor
-    if Input.is_action_just_pressed("jump") and is_on_floor():
-        velocity.y = -350.0  # Negative = upward
+	# Jump: only when on the floor
+	if Input.is_action_just_pressed("jump") and is_on_floor():
+		velocity.y = -350.0  # Negative = upward
 
-    # Horizontal movement
-    var direction = Input.get_axis("move_left", "move_right")  # Returns -1, 0, or 1
-    velocity.x = direction * 200.0
+	# Horizontal movement
+	var direction = Input.get_axis("move_left", "move_right")  # Returns -1, 0, or 1
+	velocity.x = direction * 200.0
 
-    move_and_slide()
+	move_and_slide()
 ```
 
 ### 3.5 `door.gd` — Level Exit
@@ -283,14 +283,14 @@ Each level script follows the same pattern:
 
 ```gdscript
 func _ready():
-    # 1. Connect the door's signal
-    $Door.level_completed.connect(_on_level_completed)
-    # 2. Set the hint text
-    $HintLabel.text = "Level X: ..."
-    # 3. (Optional) Set up puzzle-specific logic
+	# 1. Connect the door's signal
+	$Door.level_completed.connect(_on_level_completed)
+	# 2. Set the hint text
+	$HintLabel.text = "Level X: ..."
+	# 3. (Optional) Set up puzzle-specific logic
 
 func _on_level_completed():
-    GameManager.next_level()
+	GameManager.next_level()
 ```
 
 The puzzle-specific logic varies:
@@ -382,8 +382,8 @@ func _on_level_completed() -> void:
 5. In `game_manager.gd`, add the new level to the array:
 ```gdscript
 var level_scenes: Array[String] = [
-    ...
-    "res://scenes/levels/level_6.tscn",  # Add this line
+	...
+	"res://scenes/levels/level_6.tscn",  # Add this line
 ]
 ```
 
@@ -397,16 +397,16 @@ var elapsed_time: float = 0.0
 var is_timing: bool = false
 
 func _process(delta: float) -> void:
-    if is_timing:
-        elapsed_time += delta
+	if is_timing:
+		elapsed_time += delta
 ```
 
 2. Start timing in `start_game()`:
 ```gdscript
 func start_game():
-    elapsed_time = 0.0
-    is_timing = true
-    ...
+	elapsed_time = 0.0
+	is_timing = true
+	...
 ```
 
 3. Stop timing and show the score on the win screen:
