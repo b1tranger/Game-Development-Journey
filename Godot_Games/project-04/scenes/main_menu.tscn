@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://menu0001"]
+[gd_scene format=3 uid="uid://menu0001"]
 
-[ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_script"]
+[ext_resource type="Script" uid="uid://d08ffgn44jpmb" path="res://scenes/main_menu.gd" id="1_script"]
 
-[node name="MainMenu" type="Control"]
+[node name="MainMenu" type="Control" unique_id=188539099]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,16 +11,16 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_script")
 
-[node name="Background" type="ColorRect" parent="."]
+[node name="Background" type="ColorRect" parent="." unique_id=1493332234]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.12, 0.12, 0.18, 1.0)
+color = Color(0.12, 0.12, 0.18, 1)
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=884324577]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -28,38 +28,38 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1186810089]
 layout_mode = 2
 theme_override_constants/separation = 20
 
-[node name="TitleLabel" type="Label" parent="CenterContainer/VBoxContainer"]
+[node name="TitleLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=739519010]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.9, 0.95, 1)
+theme_override_font_sizes/font_size = 42
 text = "THAT LEVEL AGAIN"
 horizontal_alignment = 1
 vertical_alignment = 1
-theme_override_font_sizes/font_size = 42
-theme_override_colors/font_color = Color(0.9, 0.9, 0.95, 1.0)
 
-[node name="SubtitleLabel" type="Label" parent="CenterContainer/VBoxContainer"]
+[node name="SubtitleLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1150190982]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
+theme_override_font_sizes/font_size = 16
 text = "A Platformer Puzzle Template"
 horizontal_alignment = 1
 vertical_alignment = 1
-theme_override_font_sizes/font_size = 16
-theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1.0)
 
-[node name="Spacer" type="Control" parent="CenterContainer/VBoxContainer"]
-layout_mode = 2
+[node name="Spacer" type="Control" parent="CenterContainer/VBoxContainer" unique_id=1659745755]
 custom_minimum_size = Vector2(0, 30)
-
-[node name="PlayButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+
+[node name="PlayButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=324058291]
 custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
 text = "PLAY"
-theme_override_font_sizes/font_size = 22
 
-[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer"]
-layout_mode = 2
+[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1113093570]
 custom_minimum_size = Vector2(200, 50)
-text = "QUIT"
+layout_mode = 2
 theme_override_font_sizes/font_size = 22
+text = "QUIT"

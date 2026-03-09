@@ -9,7 +9,8 @@ extends CharacterBody2D
 @export var speed: float = 200.0
 
 ## Jump velocity (negative = upward)
-@export var jump_velocity: float = -350.0
+#@export var jump_velocity: float = -350.0
+@export var jump_velocity: float = -450.0
 
 ## Gravity multiplier
 @export var gravity_multiplier: float = 1.0
