@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1y7ckr6pl2b2"]
+
+[ext_resource type="Script" path="res://chicken_game/chicken_player.gd" id="1_gd"]
+[ext_resource type="PackedScene" uid="uid://co1rvu7dwhsqo" path="res://Assets/clay_chicken_maruf.dae" id="2_dae"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1"]
+radius = 0.35
+height = 0.9
+
+[node name="ChickenPlayer" type="CharacterBody3D"]
+collision_layer = 1
+collision_mask = 3
+script = ExtResource("1_gd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45, 0)
+shape = SubResource("CapsuleShape3D_1")
+
+[node name="ModelPivot" type="Node3D" parent="."]
+
+[node name="ChickenModel" parent="ModelPivot" instance=ExtResource("2_dae")]
+transform = Transform3D(-0.4, 0, -3.49691e-08, 0, 0.4, 0, 3.49691e-08, 0, -0.4, 0, 0, 0)
+
+[node name="CameraArm" type="SpringArm3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 0)
+spring_length = 3.0
+margin = 0.15
+
+[node name="PlayerCamera" type="Camera3D" parent="CameraArm"]
+current = true
+
+[node name="CluckSFX" type="AudioStreamPlayer3D" parent="."]
+volume_db = -5.0
+
+[node name="JumpSFX" type="AudioStreamPlayer3D" parent="."]
+volume_db = -8.0
+
+[node name="StepSFX" type="AudioStreamPlayer3D" parent="."]
+volume_db = -12.0

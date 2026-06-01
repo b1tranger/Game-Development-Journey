@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://cb5n631d87pye"]
+
+[ext_resource type="Script" path="res://runner_game/player.gd" id="1_1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
+size = Vector2(32, 54)
+
+[node name="Player" type="CharacterBody2D"]
+z_index = 5
+collision_layer = 1
+collision_mask = 2
+script = ExtResource("1_1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(1.2, 1.2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 17)
+shape = SubResource("RectangleShape2D_1")
+
+[node name="JumpSFX" type="AudioStreamPlayer2D" parent="."]
+volume_db = -5.0
